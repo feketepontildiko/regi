@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/loginStyle.css">
+    <link rel="stylesheet" href="/mainMenu.html">
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("/mainMenu.html"); 
+    });
+    </script> 
+</head>
+
+<body>
+    <div w3-include-html="mainMenu.html"></div>
+    <h1>Login </h1>
+    <div class="kocsog">
+        <div id="name">
+            <label>User name</label>
+            <input type="text" name="e-mail">
+        </div>
+        <div id="pass">
+            <label>Password</label>
+            <input type="text" name="password">
+        </div>
+        <div id="loginb">
+            <button>Login</button>
+        </div>
+    </div>
+</body>
+
+</html>

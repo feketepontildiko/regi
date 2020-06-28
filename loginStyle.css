@@ -1,0 +1,23 @@
+#name {
+    align-content: center;
+
+
+}
+ #loginb button {
+   padding: 10px;
+   margin-top: 10px;
+   color: chocolate;
+   box-shadow: 3px 3px 3px 3px red;
+  
+}
+
+h1 {
+    color: #b42e45;
+
+}
+
+.kocsog input{
+    display:block;
+}
+
+
