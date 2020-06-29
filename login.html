@@ -8,30 +8,78 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/loginStyle.css">
     <link rel="stylesheet" href="/mainMenu.html">
-    <script src="jquery.js"></script> 
-    <script> 
-    $(function(){
-      $("#includedContent").load("/mainMenu.html"); 
-    });
-    </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("/mainMenu.html");
+        });
+    </script>
 </head>
 
 <body>
-    <div w3-include-html="mainMenu.html"></div>
-    <h1>Login </h1>
-    <div class="kocsog">
-        <div id="name">
-            <label>User name</label>
-            <input type="text" name="e-mail">
-        </div>
-        <div id="pass">
-            <label>Password</label>
-            <input type="text" name="password">
-        </div>
-        <div id="loginb">
-            <button>Login</button>
-        </div>
+    <div id="includedContent"></div>
+    <h1>Order </h1>
+    <fieldset style="overflow: hidden; margin: 0px; left: 0px; top: 138px;">
+        <legend class="test">
+            <span>
+                Customer
+            </span>
+            <div class="kocsog">
+                <div id="name">
+                    <label for="aa">Name *</label>
+                    <input id="aa" type="text" name="name">
+                </div>
+                <div id="pass">
+                    <label for="bb">Address *</label>
+                    <input id="bb" type="text" name="address">
+                </div>
+                <div id="phone">
+                    <label for="cc">Phone number *</label>
+                    <input id="cc" type="text" name="phone">
+                </div>
+            </div>
+        </legend>
+    </fieldset>
+   
+    <fieldset style="overflow: hidden; margin: 0px; left: 0px; top: 138px;">
+        <legend class="test" >
+            <span>
+                Other
+            </span>
+             <h1>Extras</h1>
+            <div>
+                <p>
+                    <input type="checkbox" id="ch1" name="vehicle1" value="Oliva">
+                    <label for="ch1"> Plus olive</label><br>
+                    <input type="checkbox" id="ch2" name="vehicle1" value="Cheese">
+                    <label for="ch2"> Plus cheese</label><br>
+                    <input type="checkbox" id="ch3" name="vehicle1" value="Onion">
+                    <label for="ch3"> Plus onion</label><br>
+                </p>
+            </div>
+            <h1>How many times did you ordered from us?</h1>
+            <div>
+
+                <p>
+
+                    <input type="radio" id="45" name="gender" value="45">
+                    <label for="45">First time</label><br>
+                    <input type="radio" id="45" name="gender" value="45">
+                    <label for="45">Less than 5</label><br>
+                    <input type="radio" id="45" name="gender" value="45">
+                    <label for="45">Less than 10</label><br>
+                    <input type="radio" id="45" name="gender" value="45">
+                    <label for="45">More than 10</label><br>
+                </p>
+            </div>
+        </legend>
+    </fieldset>
+    
+    <div id="loginb">
+        <button>Submit</button>
     </div>
+
 </body>
 
 </html>
