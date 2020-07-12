@@ -38,26 +38,46 @@
                     <label for="cc">Phone number *</label>
                     <input id="cc" type="text" name="phone">
                 </div>
+                <div id="validate" >
+                    <button onclick="customerDataISValid()" type="button" class=" btn btn-primary">Validate</button>
+                </div>
             </div>
         </legend>
     </fieldset>
-   
+
     <fieldset style="overflow: hidden; margin: 0px; left: 0px; top: 138px;">
-        <legend class="test" >
+        <legend class="test">
             <span>
                 Other
             </span>
-             <h1>Extras</h1>
-            <div>
-                <p>
-                    <input type="checkbox" id="ch1" name="vehicle1" value="Oliva">
-                    <label for="ch1"> Plus olive</label><br>
-                    <input type="checkbox" id="ch2" name="vehicle1" value="Cheese">
-                    <label for="ch2"> Plus cheese</label><br>
-                    <input type="checkbox" id="ch3" name="vehicle1" value="Onion">
-                    <label for="ch3"> Plus onion</label><br>
-                </p>
+            <h1>Extras</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <form action="">
+                        <input type="checkbox" id="ch1" name="vehicle1" value="Oliva">
+                        <label for="ch1"> Plus olive</label><br>
+                        <input type="checkbox" id="ch2" name="vehicle1" value="Cheese">
+                        <label for="ch2"> Plus cheese</label><br>
+                        <input type="checkbox" id="ch3" name="vehicle1" value="Onion">
+                        <label for="ch3"> Plus onion</label><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mn">Mennyiség</label>
+                        <input txpe="number" id="mn" name="amount-input" class="form-control"></input>
+                    </div>
+                </form>
+                </div>
+                <div class="col-3"></div>
             </div>
+            <div class="form-group">
+                Fizetendő: <span class="show-amount"> 0 </span> Ft
+            </div>
+
+
+
             <h1>How many times did you ordered from us?</h1>
             <div>
 
@@ -75,10 +95,12 @@
             </div>
         </legend>
     </fieldset>
-    
-    <div id="loginb">
-        <button>Submit</button>
+
+    <div id="loginb" >
+        <button onclick="calcAmount()" type="button" class=" btn btn-primary">Submit</button>
     </div>
+    <script src="js/main.js"></script>
+
 
 </body>
 

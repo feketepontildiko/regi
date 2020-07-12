@@ -20,6 +20,10 @@ h1 {
     display:block;
 }
 
+.form-groupinput{
+    display:block;
+}
+
 p label {
     font-size: 8 px;
     font-weight: normal;
